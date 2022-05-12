@@ -1,0 +1,165 @@
+.catalog
+    padding-bottom: 103px
+    &__title
+        color: #0d0d0d
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+        text-transform: uppercase
+    &__tabs
+        display: flex
+        margin: 0
+        padding: 0
+        justify-content: center
+        align-items: center
+        margin-top: 69px
+        list-style-type: none               
+    &__tab
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        color: #6b6b6b
+        font-size: 18px
+        font-weight: 500
+        line-height: 50px
+        text-align: center
+        text-transform: uppercase
+        transform: skewX(-25deg)
+        margin: 0 5px 0 5px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 15px $second-color
+        &_active
+            color: $main-color
+            background-color: $second-color
+            border: none
+            &:hover
+                box-shadow: none
+        div
+            transform: skewX(25deg)
+    &__box
+        display: none
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        margin-top: 59px
+        &_mini
+            justify-content: center
+            .catalog__item
+                margin-left: 10px
+                margin-right: 10px
+        &_active
+            display: flex
+    &__item
+        width: 300px
+        min-height: 440px
+        padding: 20px 20px 26px 20px
+        border: 2px solid #e8e8e8
+        background-color: #ffffff
+        overflow: hidden
+        margin-bottom: 20px
+        hr
+            margin: 0
+    &__wrap
+        display: flex
+        justify-content: space-between
+        width: calc(200% + 40px)
+    &__grafbox        
+        width: 50%
+        transform: translateX(-116%)
+        margin-right: 20px
+        transition: 0.5s all
+        &_active
+            margin-right: 20px            
+            transform: translateX(0%)
+    &__textbox
+        width: 50%
+        margin-left: 20px
+        transform: translateX(0%)
+        transition: 0.5s all
+        &_active
+            transform: translateX(-116%)            
+            margin-left: 20px
+    &__list
+        position: relative
+        margin: 0
+        list-style-type: none
+        padding-left: 19px        
+        li
+            position: relative
+            color: #555555
+            font-size: 14px
+            font-weight: 300
+            text-align: left
+            margin-bottom: 20px
+            &:before
+                position: absolute
+                content: ''
+                width: 5px
+                height: 5px
+                background-color: $second-color
+                left: -19px
+                top: 8px
+    &__img
+        display: block
+        margin: 0 auto
+        max-width: 100%
+        max-height: 200px
+    &__subtitle
+        color: #0d0d0d
+        font-size: 16px
+        font-weight: 700
+        text-align: center
+        margin-top: 20px
+    &__descr
+        color: #0d0d0d
+        font-size: 14px
+        font-weight: 300
+        text-align: center
+        margin-top: 16px
+    &__link
+        display: block
+        color: $second-color
+        font-size: 14px
+        font-weight: 500
+        text-align: center
+        text-decoration: underline
+        margin-top: 17px
+        margin-bottom: 19px
+        text-transform: uppercase
+        &:hover
+            color: $second-color                    
+    &__link_back
+        display: block
+        position: absolute
+        bottom: 0
+        right: 50%
+        transform: translateX(50%)
+        color: $second-color
+        font-size: 14px
+        font-weight: 500
+        text-align: center
+        text-decoration: underline        
+        text-transform: uppercase
+        margin-bottom: 19px
+        &:hover
+            color: $second-color
+    &__footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 21px
+    &__oldprice
+        color: #555555
+        font-size: 14px
+        font-weight: 300
+        text-align: left
+        text-decoration: line-through
+    &__newprice
+        color: #050505
+        font-size: 20px
+        font-weight: 700
+        text-align: left
+
+

@@ -1,0 +1,47 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0    
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0, 0, 0, 0.56)
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 380px
+    min-height: 400px
+    background-color: #f2f2f2
+    padding: 38px 40px 40px
+    &_mini
+        min-height: 140px
+    &__close
+        position: absolute
+        top: 0
+        right: -40px
+        font-size: 40px
+        line-height: 17px
+        color: $second-color
+        cursor: pointer
+    &__subheader
+        color: #0d0d0d
+        font-size: 18px
+        font-weight: 700
+        line-height: 18px
+        text-align: center
+    &__descr
+        color: #0d0d0d
+        font-size: 14px
+        font-weight: 500
+        line-height: 14px
+        text-align: center
+        margin-top: 11px
+        &_mini
+            display: block
+            margin: 0 auto
+            margin-top: 11px
+            width: 215px
+
+#call, #consultation, #order, #thanks
+    display: none
